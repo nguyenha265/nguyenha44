@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Circle = function(radius) {
+        this.bankinh = radius;
+
+        this.getbankinh = function () {
+            return this.bankinh
+        };
+        this.getArea = function () {
+            let ketqua = (Math.PI * this.bankinh)*this.bankinh;
+            return ketqua;
+        }
+    };
+    let bankinh1 = new Circle(5);
+    let banKinh2 =new Circle(10);
+    alert(bankinh1.getArea());
+    alert(banKinh2.getArea());
+</script>
+</body>
+</html>
